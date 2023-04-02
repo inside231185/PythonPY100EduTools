@@ -6,5 +6,8 @@ increase = 0.05
 month = 0  # количество месяцев, которое можно прожить
 
 # TODO Оформить решение
-
+while money_capital > spend:
+    spend = (spend * increase + spend)
+    money_capital = (money_capital + salary - spend)
+    month += 1
 print(month)
